@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="page-wrapper" id="capture">
+       
+        <svg class="stripe-container" width="100%" height="100%" preserveAspectRatio="none">
+            <defs>
+                <pattern id="stripePattern" patternUnits="userSpaceOnUse" width="26" height="26" patternTransform="rotate(135)">
+                    <rect width="14" height="26" fill="red"/>
+                    <rect x="14" width="12" height="26" fill="white"/>
+                </pattern>
+            </defs>
+            <rect x="0" y="1" width="16" height="100%" fill="url(#stripePattern)" />
+            <rect x="100%" y="-2" width="16" height="100%" transform="translate(-16,0)" fill="url(#stripePattern)"/>
+        </svg>
+        
+        <div class="main">
+            <div class="maintitle">
+                <p class="document">SHIPPER'S DECLARATION FOR DANGEROUS GOODS</p>
+                <img style="width: 70px;" src="logo.png" alt="logo">
+            </div>
+            <!-- Grid 1 -->
+            <div class="grid-container">
+                <div class="grid-item">
+                    <p>Shipper</p>
+                </div>
+                <div class="grid-item">
+                    <div class="airwaybillno">
+                        <p>Air Waybill No - </p>
+                        <p>123123</p>
+                    </div>
+                    <p>Page 1 of 1 Pages</p>
+                    <p>Shipper's Reference Number (optional)
+                    </p>
+                </div>
+                <div class="grid-item">
+                    <p>Consignee</p>
+                </div>
+                <div class="grid-item">
+                    <img src="image.png" alt="LOGO" width="250px">
+                </div>
+
+                <div class="grid-item">
+                    <div class="divp">
+                        <p>Two completed and signed copies of this Declaration must <br>
+                            be handed to the operator </p>
+                    </div>
+                    <hr class="hrline">
+                    <div class="divborder">
+                        <div class="divtitle">
+                            <p>TRANSPORT DETAILS</p>
+                        </div>
+
+                        <div class="cargoshipment">
+                            <div class="div1">
+                                <p>This shipment is within the
+                                    limitations prescribed for: <br>
+                                    (delete non applicable)
+                                </p>
+                                <div class="cargodetailsdiv">
+                                    <div class="detailsdiv1">
+                                        <p style="font-size: 13px;">
+                                            PASSENGER AND CARGO AIRCRAFT
+                                        </p>
+                                    </div>
+                                    <div class="detailsdiv2"> 
+                                        <p>
+                                            XXXXX
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="div2">
+                                <p>Airport of Departure (optional)
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <div class="last">
+                        <div class="warning">
+                            <p>WARNING</p>
+                            <p>Failure to comply in all respects with the applicable Dangerous Goods Regulations may be in breach of the applicable law, subject to legal penalties
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <div class="destination">
+                        <p>Airport of Destination</p>
+                        <p>(Optional)</p>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <div class="shipmenttype">
+                        <p>Shipment type (delete non-applicable) </p>
+                        <div class="radioactivediv">
+                            <div class="radioactive1">
+                                <p style="font-size: 13px;">
+                                    NON-RADIOACTIVE
+                                </p>
+                            </div>
+                            <div class="radioactive2"> 
+                                <p>
+                                    XXXXX
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Grid 2 -->
+            <div class="vertical-grid">
+                <div class="box-one">
+                    <p>NATURE AND QUANTITY OF DANGEROUS GOODS</p>
+                </div>
+                <div class="box-two">
+                    <div class="bottom-table">
+                        <table class="dangerous-goods-table">
+                            <thead>
+                                <tr>
+                                    <th colspan="4">Dangerous Goods Identification</th>
+                                    <th rowspan="2">Quantity and Type of Packing</th>
+                                    <th rowspan="2">Packing Inst</th>
+                                    <th rowspan="2">Authorization</th>
+                                </tr>
+                                <tr>
+                                    <th>UN or ID</th>
+                                    <th>No. Proper Shipping Name</th>
+                                    <th>Class or Division (Subsidiary Hazard)</th>
+                                    <th>Packing Group</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="box-three">Additional Handling Information</div>
+            </div>
+            <!-- Grid 3 -->
+            <div class="two-column-grid">
+                <div class="column-one">
+                    <p>I hereby declare that the contents of this consignment are fully and accurately
+                        described above by the proper shipping name, and are classified, packaged,
+                        marked and labelled/placarded, and are in all respects in proper condition for
+                        transport according to applicable International and National Governmental
+                        Regulations. I declare that all of the applicable air transport requirements
+                        have been met.</p>
+                </div>
+                <div class="column-two">
+                    <div class="nameofsignature">
+                        <p>Name of Signatory</p>
+                    
+                    </div>
+                    <div class="date">
+                        <p>Date</p>
+                    
+                    </div>
+                    <div class="signature">
+                        <p>Signature <br>(see warning above)</p>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+    </div>
+</body>
+</html>
